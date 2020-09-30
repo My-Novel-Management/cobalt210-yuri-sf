@@ -19,32 +19,32 @@ from config import ASSET
 #
 #   1. Initialize
 #   2. Story memo
-#   3. Structure    - 1/8
+#   3. Structure    - 1/8：1K
 #   4. Spec
-#   5. Plot         - 1/4
+#   5. Plot         - 1/4：2K
 #   6. Scenes
-#   7. Conte        - 1/2
+#   7. Conte        - 1/2：5K
 #   8. Layout
-#   9. Draft        - 1/1
+#   9. Draft        - 1/1：10K
 #
 ################################################################
 
 # Constant
-TITLE = "作品タイトル"
-MAJOR, MINOR, MICRO = 0, 0, 1
-COPY = "コピィ"
-ONELINE = "一行説明"
-OUTLINE = "あらすじ"
-THEME = "テーマ"
-GENRE = "ジャンル"
-TARGET = "ターゲット（年代）"
-SIZE = "規定サイズ"
-CONTEST_INFO = "コンテスト情報"
-CAUTION = "注意事項"
-NOTE = "備考"
+TITLE = "ハダカの気持ちに触れたくて"
+MAJOR, MINOR, MICRO = 0, 1, 0
+COPY = "すべてを取り払った本当のあなたに触れたい"
+ONELINE = "空気が汚れて防護スーツなしには出歩けなくなった近未来。一度も触れたことのない同級生の肌に触れたくなり、ある決断をする"
+OUTLINE = "約一万字のSF短編。空気が汚れて出歩くのに防護スーツ必須となった時代。そこで学生たちは互いに触れ合うことなく暮らしていた。ある日、同級生と二人きりになり、スーツを脱いでみないかと提案する"
+THEME = "常識を疑うこと"
+GENRE = "SF／百合"
+TARGET = "10-20years"
+SIZE = "原稿25-30枚（8K〜10K）"
+CONTEST_INFO = "コバルト短編小説新人賞"
+CAUTION = ""
+NOTE = ""
 SITES = ["エブリスタ", "小説家になろう", "ノベルアッププラス", "カクヨム"]
-TAGS = ["ドラマ",]
-RELEASED = (1, 1, 2020)
+TAGS = ["SF", "学生", "百合"]
+RELEASED = (10, 10, 2020)
 
 
 # Episodes
