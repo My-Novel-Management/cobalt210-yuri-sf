@@ -64,22 +64,37 @@ def writer_note(w: World):
 
 def plot_note(w: World):
     return w.writer_note("プロットメモ",
+            "世界設定：ウイルス汚染が進み、保護スーツなしでは外出できない世界",
+            "そこで暮らす学生",
+            "",
             )
 
 def chara_note(w: World):
     return w.writer_note("人物メモ",
+            "＊女子高生１：主人公で友人に触れてみたいという思いに苦しんでいる",
+            "＊女子高生２：同級生。とても綺麗なことが自慢。潔癖症",
             )
 
 def stage_note(w: World):
     return w.writer_note("舞台メモ",
+            "学校",
+            "近未来の高校が舞台",
             )
 
 def theme_note(w: World):
     return w.writer_note("テーマメモ",
+            "世間の常識",
+            "それは本当にそうなのか？　と疑うことで、常識の檻から抜け出せる",
+            "常識とは誰かが押し付けた「その人の考え」でしかないこと",
+            "常識なんてものは存在しない",
             )
 
 def motif_note(w: World):
     return w.writer_note("モチーフ",
+            "汚染",
+            "汚れ",
+            "思春期",
+            "触れたい",
             )
 
 
