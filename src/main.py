@@ -55,8 +55,12 @@ def ch_main(w: World):
     return w.chapter('main',
             w.plot_setup("防護服がないと生活できない世界"),
             w.plot_setup("$lunaは高校生として学校に通っていた"),
-            w.plot_turnpoint(""),
-            # TODO
+            w.plot_turnpoint("一人でスーツを脱いでみた"),
+            w.plot_develop(""),
+            w.plot_turnpoint("停電になり、閉じ込められる"),
+            w.plot_resolve("スーツを脱ぐ"),
+            w.plot_resolve("素肌に触れ合う"),
+            w.plot_resolve("$yokoだけが学校に戻ってこなかった"),
             )
 
 # Notes
