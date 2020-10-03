@@ -31,7 +31,7 @@ from config import ASSET
 
 # Constant
 TITLE = "ハダカの気持ちに触れたくて"
-MAJOR, MINOR, MICRO = 0, 1, 0
+MAJOR, MINOR, MICRO = 0, 5, 0
 COPY = "すべてを取り払った本当のあなたに触れたい"
 ONELINE = "空気が汚れて防護スーツなしには出歩けなくなった近未来。一度も触れたことのない同級生の肌に触れたくなり、ある決断をする"
 OUTLINE = "約一万字のSF短編。空気が汚れて出歩くのに防護スーツ必須となった時代。そこで学生たちは互いに触れ合うことなく暮らしていた。ある日、同級生と二人きりになり、スーツを脱いでみないかと提案する"
@@ -48,13 +48,15 @@ RELEASED = (10, 10, 2020)
 
 
 # Episodes
-def ep_xxx(w: World):
-    return w.episode('episode_title',
-            )
 
 
+# Chapter
 def ch_main(w: World):
     return w.chapter('main',
+            w.plot_setup("防護服がないと生活できない世界"),
+            w.plot_setup("$lunaは高校生として学校に通っていた"),
+            w.plot_turnpoint(""),
+            # TODO
             )
 
 # Notes
