@@ -18,9 +18,11 @@ from scenes import Corridor
 from scenes import DressRoom
 from scenes import Gymnasium
 from scenes import Library
+from scenes import ManagementBlock
 from scenes import Park
 from scenes import Room
 from scenes import School
+from scenes import Street
 
 
 ################################################################
@@ -39,7 +41,7 @@ from scenes import School
 
 # Constant
 TITLE = "空虚なアクアリウム"
-MAJOR, MINOR, MICRO = 0, 5, 0
+MAJOR, MINOR, MICRO = 0, 6, 0
 COPY = "すべてを取り払った本当のあなたに触れたい"
 ONELINE = "空気が汚れて防護スーツなしには出歩けなくなった近未来。一度も触れたことのない同級生の肌に触れたくなり、ある決断をする"
 OUTLINE = "約一万字のSF短編。空気が汚れて出歩くのに防護スーツ必須となった時代。そこで学生たちは互いに触れ合うことなく暮らしていた。ある日、同級生と二人きりになり、スーツを脱いでみないかと提案する"
@@ -60,7 +62,8 @@ def ep_gray_sky(w: World):
     return w.episode("汚れた空",
             w.plot_setup("防護服がないと生活できない世界"),
             w.plot_setup("$lunaは高校生として学校に通っていた"),
-            Aquarium.fishes(w),
+            Street.drone_sky(w),
+            School.social_distance(w),
             Classroom.classmates(w),
             Library.my_friend(w),
             )
@@ -72,6 +75,7 @@ def ep_my_friend(w: World):
             w.plot_develop("それからよく二人でこっそりと抜け出して遊ぶようになる"),
             w.plot_develop("$yokoは将来研究者になりたいと言っていた"),
             w.plot_develop("夢のない$lunaは$yokoに憧れを抱いた"),
+            Aquarium.fishes(w),
             Room.think_about_her(w),
             Gymnasium.want_touching(w),
             )
@@ -82,6 +86,8 @@ def ep_nude_touch(w: World):
             w.plot_turnpoint("停電になり、閉じ込められる"),
             w.plot_resolve("スーツを脱ぐ"),
             w.plot_resolve("素肌に触れ合う"),
+            Aquarium.black_out(w),
+            Aquarium.out_suites(w),
             )
 
 
@@ -89,7 +95,9 @@ def ep_nude_touch(w: World):
 def ep_alone_blue(w: World):
     return w.episode("孤独な水槽",
             w.plot_resolve("$yokoだけが学校に戻ってこなかった"),
+            Classroom.missing(w),
             Aquarium.alone(w),
+            Park.nudist(w),
             )
 
 

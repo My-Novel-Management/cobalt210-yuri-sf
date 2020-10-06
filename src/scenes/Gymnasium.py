@@ -12,5 +12,6 @@ from storybuilder.builder.world import World
 ## scenes
 def want_touching(w: World):
     return w.scene('触れたい気持ち',
+            w.change_stage("Gymnasium"),
             )
 

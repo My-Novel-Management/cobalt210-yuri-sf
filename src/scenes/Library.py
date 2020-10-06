@@ -12,5 +12,6 @@ from storybuilder.builder.world import World
 ## scenes
 def my_friend(w: World):
     return w.scene('ともだち',
+            w.change_stage("Library"),
             )
 

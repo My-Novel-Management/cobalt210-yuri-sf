@@ -12,5 +12,6 @@ from storybuilder.builder.world import World
 ## scenes
 def think_about_her(w: World):
     return w.scene('彼女のことを思う',
+            w.change_stage("Room"),
             )
 

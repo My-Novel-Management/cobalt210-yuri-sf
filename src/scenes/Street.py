@@ -10,8 +10,11 @@ from storybuilder.builder.world import World
 
 
 ## scenes
-def nudist(w: World):
-    return w.scene('裸のわたしで',
-            w.change_stage("Park"),
+def drone_sky(w: World):
+    return w.scene('ドローンの泳ぐ空',
+            w.change_camera("luna"),
+            w.change_stage("Street"),
+            w.change_time("morning"),
+            w.change_date(10,1, 2040),
             )
 

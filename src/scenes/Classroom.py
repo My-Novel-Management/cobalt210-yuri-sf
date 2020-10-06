@@ -12,5 +12,11 @@ from storybuilder.builder.world import World
 ## scenes
 def classmates(w: World):
     return w.scene('スーツの生徒たち',
+            w.change_stage("Classroom"),
             )
 
+
+def missing(w: World):
+    return w.scene("彼女のいない教室",
+            w.change_stage("Classroom"),
+            )
