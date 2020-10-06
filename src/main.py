@@ -30,7 +30,7 @@ from config import ASSET
 ################################################################
 
 # Constant
-TITLE = "ハダカの気持ちに触れたくて"
+TITLE = "空虚なアクアリウム"
 MAJOR, MINOR, MICRO = 0, 5, 0
 COPY = "すべてを取り払った本当のあなたに触れたい"
 ONELINE = "空気が汚れて防護スーツなしには出歩けなくなった近未来。一度も触れたことのない同級生の肌に触れたくなり、ある決断をする"
@@ -73,8 +73,8 @@ def ep_nude_touch(w: World):
 
 
 
-def ep_alone_sky(w: World):
-    return w.episode("孤独な空",
+def ep_alone_blue(w: World):
+    return w.episode("孤独な水槽",
             w.plot_resolve("$yokoだけが学校に戻ってこなかった"),
             )
 
@@ -124,6 +124,10 @@ def stage_note(w: World):
     return w.writer_note("舞台メモ",
             "学校",
             "近未来の高校が舞台",
+            "禁忌とかをうまく表現できる「常識から外れた場所」がいいが",
+            "主要舞台は学校。教室。それから休憩時間か放課後に訪れる秘密の場所",
+            "図書室だとベタかな",
+            "アクアリウムとか、ちょっと特別な場所がいい",
             )
 
 def theme_note(w: World):
