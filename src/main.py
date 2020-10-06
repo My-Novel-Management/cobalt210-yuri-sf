@@ -85,7 +85,7 @@ def ch_main(w: World):
             ep_gray_sky(w),
             ep_my_friend(w),
             ep_nude_touch(w),
-            ep_alone_sky(w),
+            ep_alone_blue(w),
             )
 
 # Notes
