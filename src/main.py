@@ -48,21 +48,44 @@ RELEASED = (10, 10, 2020)
 
 
 # Episodes
+def ep_gray_sky(w: World):
+    return w.episode("汚れた空",
+            w.plot_setup("防護服がないと生活できない世界"),
+            w.plot_setup("$lunaは高校生として学校に通っていた"),
+            )
+
+
+def ep_my_friend(w: World):
+    return w.episode("憧れの親友",
+            w.plot_turnpoint("二人きりで授業をさぼった"),
+            w.plot_develop("それからよく二人でこっそりと抜け出して遊ぶようになる"),
+            w.plot_develop("$yokoは将来研究者になりたいと言っていた"),
+            w.plot_develop("夢のない$lunaは$yokoに憧れを抱いた"),
+            )
+
+
+def ep_nude_touch(w: World):
+    return w.episode("肌に触れて",
+            w.plot_turnpoint("停電になり、閉じ込められる"),
+            w.plot_resolve("スーツを脱ぐ"),
+            w.plot_resolve("素肌に触れ合う"),
+            )
+
+
+
+def ep_alone_sky(w: World):
+    return w.episode("孤独な空",
+            w.plot_resolve("$yokoだけが学校に戻ってこなかった"),
+            )
 
 
 # Chapter
 def ch_main(w: World):
     return w.chapter('main',
-            w.plot_setup("防護服がないと生活できない世界"),
-            w.plot_setup("$lunaは高校生として学校に通っていた"),
-            w.plot_turnpoint("二人きりで授業をさぼった"),
-            w.plot_develop("それからよく二人でこっそりと抜け出して遊ぶようになる"),
-            w.plot_develop("$yokoは将来研究者になりたいと言っていた"),
-            w.plot_develop("夢のない$lunaは$yokoに憧れを抱いた"),
-            w.plot_turnpoint("停電になり、閉じ込められる"),
-            w.plot_resolve("スーツを脱ぐ"),
-            w.plot_resolve("素肌に触れ合う"),
-            w.plot_resolve("$yokoだけが学校に戻ってこなかった"),
+            ep_gray_sky(w),
+            ep_my_friend(w),
+            ep_nude_touch(w),
+            ep_alone_sky(w),
             )
 
 # Notes
