@@ -10,7 +10,13 @@ from storybuilder.builder.world import World
 
 
 ## scenes
-def scene_name(w: World):
-    return w.scene('__scene__',
+def classmates(w: World):
+    return w.scene('スーツの生徒たち',
+            w.change_stage("Classroom"),
             )
 
+
+def missing(w: World):
+    return w.scene("彼女のいない教室",
+            w.change_stage("Classroom"),
+            )

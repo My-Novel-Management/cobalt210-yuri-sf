@@ -10,8 +10,8 @@ from storybuilder.builder.world import World
 
 
 ## scenes
-def nudist(w: World):
-    return w.scene('裸のわたしで',
-            w.change_stage("Park"),
+def my_friend(w: World):
+    return w.scene('ともだち',
+            w.change_stage("Library"),
             )
 
