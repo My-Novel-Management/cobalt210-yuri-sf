@@ -30,8 +30,8 @@ from config import ASSET
 ################################################################
 
 # Constant
-TITLE = "ハダカの気持ちに触れたくて"
-MAJOR, MINOR, MICRO = 0, 1, 0
+TITLE = "空虚なアクアリウム"
+MAJOR, MINOR, MICRO = 0, 5, 0
 COPY = "すべてを取り払った本当のあなたに触れたい"
 ONELINE = "空気が汚れて防護スーツなしには出歩けなくなった近未来。一度も触れたことのない同級生の肌に触れたくなり、ある決断をする"
 OUTLINE = "約一万字のSF短編。空気が汚れて出歩くのに防護スーツ必須となった時代。そこで学生たちは互いに触れ合うことなく暮らしていた。ある日、同級生と二人きりになり、スーツを脱いでみないかと提案する"
@@ -48,13 +48,44 @@ RELEASED = (10, 10, 2020)
 
 
 # Episodes
-def ep_xxx(w: World):
-    return w.episode('episode_title',
+def ep_gray_sky(w: World):
+    return w.episode("汚れた空",
+            w.plot_setup("防護服がないと生活できない世界"),
+            w.plot_setup("$lunaは高校生として学校に通っていた"),
             )
 
 
+def ep_my_friend(w: World):
+    return w.episode("憧れの親友",
+            w.plot_turnpoint("二人きりで授業をさぼった"),
+            w.plot_develop("それからよく二人でこっそりと抜け出して遊ぶようになる"),
+            w.plot_develop("$yokoは将来研究者になりたいと言っていた"),
+            w.plot_develop("夢のない$lunaは$yokoに憧れを抱いた"),
+            )
+
+
+def ep_nude_touch(w: World):
+    return w.episode("肌に触れて",
+            w.plot_turnpoint("停電になり、閉じ込められる"),
+            w.plot_resolve("スーツを脱ぐ"),
+            w.plot_resolve("素肌に触れ合う"),
+            )
+
+
+
+def ep_alone_blue(w: World):
+    return w.episode("孤独な水槽",
+            w.plot_resolve("$yokoだけが学校に戻ってこなかった"),
+            )
+
+
+# Chapter
 def ch_main(w: World):
     return w.chapter('main',
+            ep_gray_sky(w),
+            ep_my_friend(w),
+            ep_nude_touch(w),
+            ep_alone_blue(w),
             )
 
 # Notes
@@ -93,6 +124,10 @@ def stage_note(w: World):
     return w.writer_note("舞台メモ",
             "学校",
             "近未来の高校が舞台",
+            "禁忌とかをうまく表現できる「常識から外れた場所」がいいが",
+            "主要舞台は学校。教室。それから休憩時間か放課後に訪れる秘密の場所",
+            "図書室だとベタかな",
+            "アクアリウムとか、ちょっと特別な場所がいい",
             )
 
 def theme_note(w: World):
