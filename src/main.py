@@ -12,7 +12,15 @@ from storybuilder.assets import basic
 from storybuilder.assets import common_rubi
 from config import ASSET
 # import scenes
-# from scenes import xxx
+from scenes import Aquarium
+from scenes import Classroom
+from scenes import Corridor
+from scenes import DressRoom
+from scenes import Gymnasium
+from scenes import Library
+from scenes import Park
+from scenes import Room
+from scenes import School
 
 
 ################################################################
@@ -52,6 +60,9 @@ def ep_gray_sky(w: World):
     return w.episode("汚れた空",
             w.plot_setup("防護服がないと生活できない世界"),
             w.plot_setup("$lunaは高校生として学校に通っていた"),
+            Aquarium.fishes(w),
+            Classroom.classmates(w),
+            Library.my_friend(w),
             )
 
 
@@ -61,6 +72,8 @@ def ep_my_friend(w: World):
             w.plot_develop("それからよく二人でこっそりと抜け出して遊ぶようになる"),
             w.plot_develop("$yokoは将来研究者になりたいと言っていた"),
             w.plot_develop("夢のない$lunaは$yokoに憧れを抱いた"),
+            Room.think_about_her(w),
+            Gymnasium.want_touching(w),
             )
 
 
@@ -76,6 +89,7 @@ def ep_nude_touch(w: World):
 def ep_alone_blue(w: World):
     return w.episode("孤独な水槽",
             w.plot_resolve("$yokoだけが学校に戻ってこなかった"),
+            Aquarium.alone(w),
             )
 
 

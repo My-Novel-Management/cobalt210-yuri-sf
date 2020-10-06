@@ -16,9 +16,12 @@ ASSET = {
             ("School", "高校", "Chiba"),
             ("Corridor", "廊下", "School"),
             ("Classroom", "教室", "School"),
+            ("Library", "図書室", "School"),
+            ("Aquarium", "水槽", "School"),
+            ("Gymnasium", "体育館", "School"),
+            ("DressRoom", "更衣室", "School"),
             ("Home", "ルナの自宅", "Chiba"),
             ("Room", "ルナの自室", "Home"),
-            ("Aquarium", "水槽", "School"),
             ("Park", "海浜公園", "Chiba"),
             ),
         "DAYS": (
