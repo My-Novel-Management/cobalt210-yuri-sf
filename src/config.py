@@ -7,8 +7,8 @@ Story Config
 ASSET = {
         "PERSONS": (
             # (tag / name / full / age (birth) / job / call / info)
-            ("luna", "ルナ", "", 17,(1,1), "female", "高校生", "me:私"),
-            ("yoko", "ヨウコ", "", 17,(1,1), "female", "高校生", "me:わたし"),
+            ("luna", "ルナ", "イチミヤ,ルナ", 17,(1,1), "female", "高校生", "me:私"),
+            ("yoko", "ヨウコ", "サエキ,ヨウコ", 17,(1,1), "female", "高校生", "me:わたし"),
             ),
         "STAGES": (
             # (tag / name / parent / (geometry) / info)
