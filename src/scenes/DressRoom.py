@@ -10,4 +10,9 @@ from storybuilder.builder.world import World
 
 
 ## scenes
-
+def dressing(w: World):
+    luna = w.get("luna")
+    yoko = w.get("yoko")
+    return w.scene("着替え",
+            w.change_stage("DressRoom"),
+            )

@@ -78,6 +78,7 @@ def ep_my_friend(w: World):
             w.plot_develop("夢のない$lunaは$yokoに憧れを抱いた"),
             Room.think_about_her(w),
             Gymnasium.want_touching(w),
+            DressRoom.dressing(w),
             )
 
 
