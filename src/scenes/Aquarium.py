@@ -61,6 +61,29 @@ def fishes(w: World):
             )
 
 
+def absent(w: World):
+    luna = w.get("luna")
+    yoko = w.get("yoko")
+    return w.scene("サボり",
+            w.change_stage("Aquarium"),
+            luna.be("ぼんやりとメダカを眺めている"),
+            yoko.come("ドアが開いて入ってくる$S"),
+            yoko.talk("また、ここだったのね",
+                "どうして？"),
+            luna.talk("$yoko", "別に理由は、ないよ"),
+            yoko.talk("ずっと普通に授業受けてたのに、何かあったに決まってる",
+                "$meでいいなら聞くから何でも話して"),
+            luna.talk("ここのメダカってさ、子ども作って自分たちを増やそうとか、思うのかな"),
+            yoko.talk("遺伝子操作されてて子どもは産めないって聞いてる",
+                "子ども産んだりするようになると管理が面倒だらか"),
+            luna.talk("結局水質検査で死ぬか、寿命で死ぬか、ってことか",
+                "メダカとしてのやりたいこととか夢とか、そんなものすらないんだろうね"),
+            yoko.talk("思春期特有の思考というやつ？",
+                ""),
+            # TODO
+            )
+
+
 def black_out(w: World):
     luna = w.get("luna")
     return w.scene("停電",

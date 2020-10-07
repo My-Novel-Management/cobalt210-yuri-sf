@@ -87,6 +87,7 @@ def ep_nude_touch(w: World):
             w.plot_turnpoint("停電になり、閉じ込められる"),
             w.plot_resolve("スーツを脱ぐ"),
             w.plot_resolve("素肌に触れ合う"),
+            Aquarium.absent(w),
             Aquarium.black_out(w),
             Aquarium.out_suites(w),
             )
