@@ -40,8 +40,8 @@ from scenes import Street
 ################################################################
 
 # Constant
-TITLE = "空虚なアクアリウム"
-MAJOR, MINOR, MICRO = 0, 6, 0
+TITLE = "空虚な水槽"
+MAJOR, MINOR, MICRO = 0, 7, 0
 COPY = "すべてを取り払った本当のあなたに触れたい"
 ONELINE = "空気が汚れて防護スーツなしには出歩けなくなった近未来。一度も触れたことのない同級生の肌に触れたくなり、ある決断をする"
 OUTLINE = "約一万字のSF短編。空気が汚れて出歩くのに防護スーツ必須となった時代。そこで学生たちは互いに触れ合うことなく暮らしていた。ある日、同級生と二人きりになり、スーツを脱いでみないかと提案する"
@@ -63,9 +63,10 @@ def ep_gray_sky(w: World):
             w.plot_setup("防護服がないと生活できない世界"),
             w.plot_setup("$lunaは高校生として学校に通っていた"),
             Street.drone_sky(w),
-            School.social_distance(w),
+            School.social_distance(w).omit(),
             Classroom.classmates(w),
-            Library.my_friend(w),
+            Library.my_friend(w).omit(),
+            Aquarium.fishes(w),
             )
 
 
@@ -75,7 +76,6 @@ def ep_my_friend(w: World):
             w.plot_develop("それからよく二人でこっそりと抜け出して遊ぶようになる"),
             w.plot_develop("$yokoは将来研究者になりたいと言っていた"),
             w.plot_develop("夢のない$lunaは$yokoに憧れを抱いた"),
-            Aquarium.fishes(w),
             Room.think_about_her(w),
             Gymnasium.want_touching(w),
             )
