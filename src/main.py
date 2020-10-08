@@ -99,7 +99,7 @@ def ep_alone_blue(w: World):
             w.plot_resolve("$yokoだけが学校に戻ってこなかった"),
             Classroom.missing(w),
             Aquarium.alone(w),
-            Park.nudist(w),
+            Park.nudist(w).omit(),
             )
 
 

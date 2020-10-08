@@ -27,4 +27,8 @@ def missing(w: World):
     luna = w.get("luna")
     return w.scene("彼女のいない教室",
             w.change_stage("Classroom"),
+            luna.be("けれど翌日から、$yokoの姿はなくなった"),
+            luna.do("担任は親の都合で急遽転校したと説明していたが、何か問題があったことは明白だった"),
+            luna.do("あの後彼女は抗議にいくと言っていたけれど、連絡は何もない"),
+            luna.do("返信のない端末をぼんやりと見つめて"),
             )
