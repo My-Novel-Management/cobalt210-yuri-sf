@@ -15,6 +15,8 @@ def fishes(w: World):
     yoko = w.get("yoko")
     return w.scene("水槽の魚たち",
             w.change_stage("Aquarium"),
+            "漫画とか描いている方がいいかな",
+            "あとヘッド部を外しているくらいがいい",
             luna.be("目の前の水槽を泳ぐメダカを眺めている"),
             yoko.come("そこにドアを開けて入ってくる生徒"),
             yoko.talk("$luna、またここにいる",
