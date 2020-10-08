@@ -14,6 +14,9 @@ def classmates(w: World):
     luna = w.get("luna")
     return w.scene('スーツの生徒たち',
             w.change_stage("Classroom"),
+            "ライトで安全を示す。ライトや色をモチーフとして使うこと",
+            "生徒の顔がよく分からないのを示しておくこと。先生とかも",
+            "あと「閉じ込められている感」を見せる",
             luna.come("教室に入ってくる"),
             luna.do("誰もが防護スーツ姿で着席している"),
             luna.do("端末を手におしゃべり"),
