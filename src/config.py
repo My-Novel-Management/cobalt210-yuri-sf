@@ -9,6 +9,7 @@ ASSET = {
             # (tag / name / full / age (birth) / job / call / info)
             ("luna", "ルナ", "イチミヤ,ルナ", 17,(1,1), "female", "高校生", "me:私"),
             ("yoko", "ヨウコ", "サエキ,ヨウコ", 17,(1,1), "female", "高校生", "me:わたし"),
+            ("kita", "キタガワ", "", 37,(1,1), "female", "教師", "me:私"),
             ),
         "STAGES": (
             # (tag / name / parent / (geometry) / info)
