@@ -77,8 +77,8 @@ def ep_my_friend(w: World):
             w.plot_develop("$yokoは将来研究者になりたいと言っていた"),
             w.plot_develop("夢のない$lunaは$yokoに憧れを抱いた"),
             Room.think_about_her(w),
-            Gymnasium.want_touching(w),
-            DressRoom.dressing(w),
+            Gymnasium.want_touching(w).omit(),
+            DressRoom.dressing(w).omit(),
             )
 
 
