@@ -41,7 +41,7 @@ from scenes import Street
 
 # Constant
 TITLE = "空虚な水槽"
-MAJOR, MINOR, MICRO = 0, 8, 0
+MAJOR, MINOR, MICRO = 0, 9, 0
 COPY = "すべてを取り払った本当のあなたに触れたい"
 ONELINE = "空気が汚れて防護スーツなしには出歩けなくなった近未来。一度も触れたことのない同級生の肌に触れたくなり、ある決断をする"
 OUTLINE = "約一万字のSF短編。空気が汚れて出歩くのに防護スーツ必須となった時代。そこで学生たちは互いに触れ合うことなく暮らしていた。ある日、同級生と二人きりになり、スーツを脱いでみないかと提案する"
@@ -77,8 +77,8 @@ def ep_my_friend(w: World):
             w.plot_develop("$yokoは将来研究者になりたいと言っていた"),
             w.plot_develop("夢のない$lunaは$yokoに憧れを抱いた"),
             Room.think_about_her(w),
-            Gymnasium.want_touching(w),
-            DressRoom.dressing(w),
+            Gymnasium.want_touching(w).omit(),
+            DressRoom.dressing(w).omit(),
             )
 
 
